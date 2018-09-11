@@ -1,12 +1,5 @@
-<?php include_once '../public/header.php'; 
-
- use modelo\Profissional;
-
-session_start();
-$profissional = $_SESSION['dadosProfissional'];
-?>
 <div class="row">
-    <div class="col-md-2"> 
+    <div class="col-md-2">
         <a ></a>
         </div>
     <div class="col-md-8">
@@ -77,7 +70,7 @@ $profissional = $_SESSION['dadosProfissional'];
                             <p class="form-group">
                                 <label for="cidade">Cidade</label>
                                 <input type="text" name="cidade" class="form-control" value="<?= $profissional->getCidade()?>">
-                            </p> 
+                            </p>
                             </div>
                             </div>
                             <p>
@@ -94,8 +87,6 @@ $profissional = $_SESSION['dadosProfissional'];
 </div>
     <div class="col-md-1">
         <a></a>
-        
+
     </div>
 </div>
-
-

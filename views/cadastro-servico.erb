@@ -1,19 +1,5 @@
-<?php
-include_once '../public/header.php';
-
-use modelo\Profissional;
-
-session_start();
-if (isset($_SESSION['dadosProfissional'])) {
-    $profissional = $_SESSION['dadosServico'];
-} else {
-    $profissional = new Profissional();
-}
-?>
-
-
 <div class="row">
-    <div class="col-md-2"> 
+    <div class="col-md-2">
         <a ></a>
     </div>
     <div class="col-md-8">
@@ -28,7 +14,7 @@ if (isset($_SESSION['dadosProfissional'])) {
                                 <form  action="../controle/servico-cadastro.php" method="post" class="form">
                                     <input type="hidden" name="acao" value="etapa1">
                                     <p class="form-group">
-                                        <label>Escolha um serviço para cadastrar sua descrição</label>  
+                                        <label>Escolha um serviço para cadastrar sua descrição</label>
                                     </p>
                                     <tr>
                                         <td>

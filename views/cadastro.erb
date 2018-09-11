@@ -1,23 +1,12 @@
-<?php include_once '../public/header.php'; 
- use modelo\Profissional;
- session_start();
- if(isset($_SESSION['dadosProfissional'])){
-     $profissional = $_SESSION['dadosProfissional'];
- }
- else{
-     $profissional = new Profissional();
- }
- ?>
-
 
 <div class="row">
-    <div class="col-md-2"> 
+    <div class="col-md-2">
         <a ></a>
         </div>
     <div class="col-md-8">
 <div class="panel panel-success">
     <section class="container">
-        <h3 class="text-danger">Cadastro do Profissional</h3>  
+        <h3 class="text-danger">Cadastro do Profissional</h3>
 </div>
 <div class="panel panel-danger">
     <div class="panel-heading">
@@ -40,10 +29,33 @@
                 <input class="form-control" type="text" name="cpf" value="<?= $profissional->getCpf()?>" placeholder="CPF" required />
             </p>
             <p>
-                <label for="celular">Celular</label>
-                <input class="form-control" type="text" name="celular" value="<?= $profissional->getCelular()?>" placeholder="Celular" required />
+                <label for="email">E-mail</label>
+                <input class="form-control" type="text" name="email" value="<?= $profissional->getEmail()?>" placeholder="Celular" required />
             </p>
-
+            <p>
+                <label for="password">Senha</label>
+                <input class="form-control" type="text" name="password" value="<?= $profissional->getPassword()?>" placeholder="Celular" required />
+            </p>
+            <p class="form-group">
+                <label for="nome">Nome do Estabelecimento</label>
+                <input type="text" name="nomeEstabelecimento" value="<?= $profissional->getNomeEstabelecimento()?>" class="form-control">
+            </p>
+            <p class="form-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" value="<?=$profissional->getEndereco() ?>" class="form-control">
+            </p>
+            <p>
+                <label for="bairro">Bairro</label>
+                <input class="form-control" type="text" name="bairro" value="<?= $profissional->getBairro()?>">
+            </p>
+            <p>
+                <label for="telefone">Telefone</label>
+                <input class="form-control" type="text" name="telefone" value="<?= $profissional->getTelefone()?>" placeholder="Celular" required />
+            </p>
+            <p>
+                <label for="horarioAtendimento">Horário de Atendimento</label>
+                <input class="form-control" type="text" name="horarioAtendimento" value="<?= $profissional->gethorarioAtendimento()?>">
+            </p>
     </div>
 </div>
 <nav aria-label="...">
@@ -57,8 +69,6 @@
 </div>
     <div class="col-md-1">
         <a></a>
-        
+
     </div>
 </div>
-
-
