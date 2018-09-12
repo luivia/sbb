@@ -1,3 +1,58 @@
-body{
+.body{
   background: pink;
+}
+
+.nav{
+    background: gray;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: block;
+    justify-content: center;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;text-align: center;
+  border-radius: 5px;
+  color: lightpink;
+  padding: 3px 8px;
+  max-width: 125px;
+  margin: 5px;
+}
+
+.nav-item{
+    color: lightpink;
+}
+
+.container-fluid{
+    text-align: center;
+}
+
+.text_box{
+    text-align: center;
+    align-items: center;
+}
+
+.btn{
+    text-align: center;
+}
+
+.img-header{
+    vertical-align: middle;
+    border-style: hidden;
+    width: 700px;
+}
+
+.table{
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
 }
